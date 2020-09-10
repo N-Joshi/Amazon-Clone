@@ -1,0 +1,126 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffff;
+}
+
+.login__container{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.login__container >h1 {
+    font-weight: 500px;
+    margin-bottom: 20px;
+}
+
+.login__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+
+.login__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.login__container > p{
+    margin-top: 15px;
+    font-size:12px ;
+}
+
+.login_img{
+   margin-top:20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.login_signin{
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-radius: 2px;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    height: 30px;
+    width: 100%;
+}
+
+.login_register{
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-color: darkgray;
+    height: 30px;
+    width: 27%;
+}
+
+
+.login__testUser{
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid orange;
+    top: 18%;
+    left: 65%;
+    position: absolute;
+}
+
+.a-divider.a-divider-break h5 {
+    line-height: 1;
+    font-size: 12px;
+    color: #767676;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 8px 0 7px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .login{
+        height: 110vh;
+    }
+
+    .login__testUser{
+        width: 85%;
+        margin: 15px;
+        padding: 10px;
+        border: 1px solid orange;
+        top: 76%;
+        left: 0px;
+        position: absolute;
+    }
+
+
+    .login_register {
+        width: 70%;
+    }
+}
+
+
+@media only screen and  (min-device-width : 768px) and (max-device-width : 1023px)  {
+
+.login__testUser {
+    width: 35%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid orange;
+    top: 48%;
+    left: 30%;
+    position: absolute;
+}}

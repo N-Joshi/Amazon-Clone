@@ -1,0 +1,38 @@
+.checkout{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    height: max-content;
+}
+
+.checkout__banner{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.checkout__title{
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom:1px solid lightgray ;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .checkout{
+        padding: 10px;
+    }
+
+    .check__basket{
+        margin-top: 40%;
+    }
+
+    .checkout__right{
+        position: absolute;
+        margin: 10px;
+        top: 30%;
+    }
+
+    .subtotal{
+        margin: 20px;
+    }
+}

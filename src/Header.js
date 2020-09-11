@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-import {Link} from 'react-router-dom'; 
+import {Link, useHistory} from 'react-router-dom'; 
 import { useStateValue } from './StateProvider';
 import {auth} from './firebase';
 
@@ -10,10 +10,12 @@ import {auth} from './firebase';
 function Header() {
 
     const[{basket,user},dispatch] = useStateValue();
+    const history = useHistory()
 
     const handleAuth = () =>{
         if(user){
             auth.signOut()
+            history.push('/')
         }
     }
 
@@ -35,10 +37,12 @@ function Header() {
                    <span className="header_option_line2">{user ? 'Sign Out':'Sign In'}</span>
                 </div>
             </Link>
+            <Link to={!user ? '/login':'/orders'}>
                 <div className="header__option">
                     <span className="header_option_line1">Return</span>
                     <span className="header_option_line2">& Orders</span>
                 </div>
+            </Link>
                 <div className="header__option">
                     <span className="header_option_line1">Your</span>
                     <span className="header_option_line2">Prime</span>

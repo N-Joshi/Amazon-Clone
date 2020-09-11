@@ -68,3 +68,16 @@
 }
 
 }
+
+
+.product:hover{
+    opacity: 0.9;
+    transition-duration: 0.5s;
+    transition: ease-in-out;
+}
+
+
+.product > img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}
